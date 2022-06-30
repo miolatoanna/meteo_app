@@ -1,0 +1,81 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Regole generiche */
+html {
+    font-family: 'Roboto', sans-serif;
+    color: #23236a;
+    background: linear-gradient(lightblue, #babaee);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+/* Logo */
+header img {
+    width: 90px;
+}
+
+/* Contenuto centrale */
+main {
+    text-align: center;
+}
+
+/* Informazioni meteo */
+.weather-info {
+    margin-bottom: 32px;s
+}
+
+.weather-icon {
+    max-width: 100%;
+    transition: transform 0.6s, opacity 1s;
+}
+
+.suggestion,
+.weather-location {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.weather-temperature {
+    font-size: 112px;
+    margin-bottom: 26px;
+}
+
+/* Pannello */
+.panel {
+    /* width: auto; */
+    background-color: #e8eefa;
+    border-radius: 10px;
+    padding: 20px;
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #0a0a3c;
+}
+
+/* Effetti di caricamento */
+.js-loading .weather-icon {
+    opacity: 0;
+    transform: translateY(40px);  /*sposta dal basso verso l'alto*/
+}
+
+.js-loading .panel {
+    opacity: 0;
+    transform: scale(0);  /*tipo effetto pop-up*/
+}
